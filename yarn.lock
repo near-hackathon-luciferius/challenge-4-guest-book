@@ -1443,6 +1443,35 @@
     "call-me-maybe" "^1.0.1"
     "glob-to-regexp" "^0.3.0"
 
+"@near-wallet-selector/core@^3.0.2", "@near-wallet-selector/core@3.0.2":
+  "integrity" "sha512-hLJ233F4AHP+OehMIqfdax78DLejcyOsYaZJUny1uvjPrX7BXOY5L6vqWnT8MXU1IzuQmpQL9OExldSTLkfEXA=="
+  "resolved" "https://registry.npmjs.org/@near-wallet-selector/core/-/core-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "bn.js" "^5.2.0"
+    "near-api-js" "0.44.2"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+
+"@near-wallet-selector/near-wallet@^3.0.2":
+  "integrity" "sha512-YMJZnc44mgTDSHwNlsOF48NtTz+ricRdEipNezOBplZMb4sYcleVhZyYPyawmioeidbUuqjd/AizdOzXnsKMmw=="
+  "resolved" "https://registry.npmjs.org/@near-wallet-selector/near-wallet/-/near-wallet-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "@near-wallet-selector/core" "3.0.2"
+    "bn.js" "^5.2.0"
+    "near-api-js" "0.44.2"
+    "react" "^17.0.2"
+    "react-dom" "^17.0.2"
+
+"@near-wallet-selector/sender@^3.0.2":
+  "integrity" "sha512-JuaJ5eAW/dvwGmZ6/31iFXWopJ4J5HA0pZPJpqo6Vs3eEGVxPSEj3Vjt7R9w+gehrxJPqQMET29JT18A/UEKyQ=="
+  "resolved" "https://registry.npmjs.org/@near-wallet-selector/sender/-/sender-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "is-mobile" "^3.0.0"
+    "near-api-js" "0.44.2"
+
 "@nodelib/fs.scandir@2.1.3":
   "integrity" "sha512-eGmwYQn3gxo4r7jdQnkrrN6bY478C3P+a/y72IJukF8LjB6ZHeB3c+Ehacj3sYeSmUXGlnA67/PmbM9CVwL7Dw=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz"
@@ -2837,6 +2866,11 @@
     "define-property" "^0.2.5"
     "isobject" "^3.0.0"
     "static-extend" "^0.1.1"
+
+"classnames@^2.2.6":
+  "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
+  "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
+  "version" "2.3.1"
 
 "cli-boxes@^2.2.0":
   "integrity" "sha512-gpaBrMAizVEANOpfZp/EEUixTXDyGt7DFzdK5hU+UbWt/J0lB0w20ncZj59Z9a93xHb9u12zF5BS6i9RKbtg4w=="
@@ -5146,6 +5180,11 @@
     "global-dirs" "^2.0.1"
     "is-path-inside" "^3.0.1"
 
+"is-mobile@^3.0.0":
+  "integrity" "sha512-RRoXXR2HNFxNkUnxtaBdGBXtFlUMFa06S0NUKf/LCF+MuGLu13gi9iBCkoEmc6+rpXuwi5Mso5V8Zf7mNynMBQ=="
+  "resolved" "https://registry.npmjs.org/is-mobile/-/is-mobile-3.1.1.tgz"
+  "version" "3.1.1"
+
 "is-npm@^4.0.0":
   "integrity" "sha512-96ECIfh9xtDDlPylNPXhzjsykHsMJZ18ASpaWzQyBr4YRTcVjUvzaHayDAES2oU/3KpljhHUjtSRNiDwi0F0ig=="
   "resolved" "https://registry.npmjs.org/is-npm/-/is-npm-4.0.0.tgz"
@@ -6187,6 +6226,11 @@
   dependencies:
     "object-visit" "^1.0.0"
 
+"materialize-css@^1.0.0":
+  "integrity" "sha512-4/oecXl8y/1i8RDZvyvwAICyqwNoKU4or5uf8uoAd74k76KzZ0Llym4zhJ5lLNUskcqjO0AuMcvNyDkpz8Z6zw=="
+  "resolved" "https://registry.npmjs.org/materialize-css/-/materialize-css-1.0.0.tgz"
+  "version" "1.0.0"
+
 "md5.js@^1.3.4":
   "integrity" "sha512-xitP+WxNPcTTOgnTJcrhM0xvdPepipPSf3I8EIpGKeFLjt3PlJLIDG3u8EX53ZIubkb+5U2+3rELYpEhHhzdkg=="
   "resolved" "https://registry.npmjs.org/md5.js/-/md5.js-1.3.5.tgz"
@@ -6433,10 +6477,10 @@
     "text-encoding-utf-8" "^1.0.2"
     "tweetnacl" "^1.0.1"
 
-"near-api-js@^0.44.0":
-  "integrity" "sha512-aYJhIOf/c9zd9GSTtKHIbfu9cDdLZYPNoHl0k0i+/Kk1AFUmvtEaNcohC278yxiJfS16kOYCuqHl5u6GKh9G/g=="
-  "resolved" "https://registry.npmjs.org/near-api-js/-/near-api-js-0.44.0.tgz"
-  "version" "0.44.0"
+"near-api-js@^0.44.0", "near-api-js@0.44.2":
+  "integrity" "sha512-eMnc4V+geggapEUa3nU2p8HSHn/njtloI4P2mceHQWO8vDE1NGpnAw8FuTBrLmXSgIv9m6oocgFc9t3VNf5zwg=="
+  "resolved" "https://registry.npmjs.org/near-api-js/-/near-api-js-0.44.2.tgz"
+  "version" "0.44.2"
   dependencies:
     "bn.js" "5.2.0"
     "borsh" "^0.6.0"
@@ -7860,6 +7904,13 @@
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
+
+"react-materialize@^3.10.0":
+  "integrity" "sha512-KRu5HnScZv2PVlV7KHyIETPn/GyarJK56zdvS7rg3AHSzG+RWk3PxlJR+5Te8m+eNvTJzMt4ZeB3g677LV0hJg=="
+  "resolved" "https://registry.npmjs.org/react-materialize/-/react-materialize-3.10.0.tgz"
+  "version" "3.10.0"
+  dependencies:
+    "classnames" "^2.2.6"
 
 "react-shallow-renderer@^16.13.1":
   "integrity" "sha512-rkIMcQi01/+kxiTE9D3fdS959U1g7gs+/rborw++42m1O9FAQiNI/UNRZExVUoAOprn4umcXf+pFRou8i4zuBg=="
