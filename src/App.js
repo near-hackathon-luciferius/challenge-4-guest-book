@@ -5,6 +5,9 @@ import Big from 'big.js';
 import Form from './components/Form';
 import SignIn from './components/SignIn';
 import Messages from './components/Messages';
+import 'materialize-css/dist/css/materialize.css'
+//import './App.css';
+require('materialize-css');
 
 const SUGGESTED_DONATION = '0';
 const BOATLOAD_OF_GAS = Big(3).times(10 ** 13).toFixed();
@@ -13,7 +16,6 @@ const App = ({ contract, currentUser, nearConfig, wallet }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    // TODO: don't just fetch once; subscribe!
     contract.getMessages().then(setMessages);
   }, []);
 
@@ -23,10 +25,7 @@ const App = ({ contract, currentUser, nearConfig, wallet }) => {
     const { fieldset, message, donation } = e.target.elements;
 
     fieldset.disabled = true;
-
-    // TODO: optimistically update page with new message,
-    // update blockchain data in background
-    // add uuid to each message, so we know which one is already known
+    
     contract.addMessage(
       { text: message.value },
       BOATLOAD_OF_GAS,
@@ -57,7 +56,7 @@ const App = ({ contract, currentUser, nearConfig, wallet }) => {
   };
 
   return (
-    <main>
+    <main id="page-wrapper">
       <header>
         <h1>NEAR Guest Book</h1>
         { currentUser
