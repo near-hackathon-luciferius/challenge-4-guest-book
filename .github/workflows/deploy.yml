@@ -16,6 +16,8 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+          mkdir dist/assets
+          cp -r src/assets dist/assets
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
