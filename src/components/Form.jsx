@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Big from 'big.js';
 import { Button, TextInput } from 'react-materialize';
 
-export default function Form({ onSubmit, currentUser }) {
+export default function Form({ onSubmit, accountId, balance }) {
   return (
     <form onSubmit={onSubmit}>
       <fieldset id="fieldset">
-        <p>Sign the guest book, { currentUser.accountId }!</p>
+        <p>Sign the guest book, { accountId }!</p>
         <div className="highlight">
           <TextInput
             autoComplete="off"
@@ -23,7 +23,7 @@ export default function Form({ onSubmit, currentUser }) {
                 autoComplete="off"
                 id="donation"
                 defaultValue={'0'}
-                max={Big(currentUser.balance).div(10 ** 24)}
+                max={Big(balance).div(10 ** 24)}
                 min="0"
                 step="0.01"
                 type="number"
@@ -45,8 +45,6 @@ export default function Form({ onSubmit, currentUser }) {
 
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  currentUser: PropTypes.shape({
-    accountId: PropTypes.string.isRequired,
-    balance: PropTypes.string.isRequired
-  })
+  accountId: PropTypes.string.isRequired,
+  balance: PropTypes.string.isRequired
 };
