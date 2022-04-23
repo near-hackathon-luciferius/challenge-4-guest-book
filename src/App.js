@@ -124,7 +124,14 @@ const App = ({ nearConfig }) => {
               },
             },
           ],
-        }).then(() => {
+        })
+        .catch((err) => {
+          alert("Failed to add message");
+          console.log("Failed to add message");
+          fieldset.disabled = false;
+          throw err;
+        })
+        .then(() => {
       getMessages().then(messages => {
         setMessages(messages);
         message.value = '';
@@ -176,7 +183,7 @@ const App = ({ nearConfig }) => {
         }
       </header>
       { accountId && accounts.length
-        ? <Form onSubmit={onSubmit} accountId={accountId} balance="1" />
+        ? <Form onSubmit={onSubmit} accountId={accountId} balance="10" />
         : <SignIn/>
       }
       { accountId && accounts.length && messages.length && <Messages messages={messages}/> }

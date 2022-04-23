@@ -23,7 +23,7 @@ export default function Form({ onSubmit, accountId, balance }) {
                 autoComplete="off"
                 id="donation"
                 defaultValue={'0'}
-                max={Big(balance).div(10 ** 24)}
+                max={balance}
                 min="0"
                 step="0.01"
                 type="number"
